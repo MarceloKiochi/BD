@@ -1,0 +1,9 @@
+version: '3.1'
+
+services:
+  db:
+    build: . #busca o Dockerfile
+    container_name: container-produtora
+    restart: always
+    ports:
+      - "8089:5432"
